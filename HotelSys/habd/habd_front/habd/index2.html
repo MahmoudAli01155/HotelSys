@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+
+
+    <style>
+
+
+            @font-face{
+                font-family: BrixtonBold;
+                src: url(BrixtonBold.otf)
+            }
+
+            @font-face{
+                font-family: Myron-Regular;
+                src: url(Myron-Regular.otf)
+            }
+
+            @font-face{
+                font-family: FreeAdelaide;
+                src: url(FreeAdelaide.ttf)
+            }
+
+            @font-face{
+                font-family: PlayfairDisplay-Regular;
+                src: url(PlayfairDisplay-Regular.ttf)
+            }
+
+            
+
+            
+        
+            .navbar-brand{
+                /* position: fixed; */
+                max-height: 100px;
+                float: left;
+            }
+
+            #myLogo{
+                width: 100px;
+                height: 150px;                
+            }
+
+            .nav-item{
+                font-size: 20px;
+                font-family: PlayfairDisplay-Regular;
+                padding: 0 15px;
+                text-transform: uppercase;
+                
+            }
+
+            .nav-link{
+                color: black;
+            }
+            .nav-link:hover{
+                color: #6eb5c0;
+            }
+
+            
+
+            #activeItem{
+                
+                background-color: #006c84;
+                font-size: 20px;
+                font-family: PlayfairDisplay-Regular;
+                padding: 0 15px;
+                text-transform: uppercase;
+            }
+            #activeLink{
+                color: white;
+            }
+            #activeLink:hover{
+                color: #6eb5c0;
+            }
+
+            .col-sm-3{
+               
+            }
+
+            .card-text{
+                font-size: 16.5px;
+                font-family: PlayfairDisplay-Regular;
+            }
+
+            .card-title{
+                font-family: PlayfairDisplay-Regular;
+            }
+
+        @media (max-width: 768px){
+
+            
+            
+        
+        }
+        
+        
+        
+            </style>
+
+
+  </head>
+
+  
+  <body style="background: #f2f4f7">
+    
+    <nav class="navbar navbar-expand-lg  sticky-top shadow-lg p-3 mb-5 bg-white rounded" style="background-color:white;">
+
+        <div class="container" >
+                <a class="navbar-brand" href="#"><img src="das.jpeg" class="d-block w-100" id="myLogo" alt="..."></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background: #006c84">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                      
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-auto" style="margin-top: 50px;">
+                        <li class="nav-item " >
+                            <a class="nav-link" href="#">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">book & Reserve</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Offers & Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Discover</a>
+                        </li>
+                        <li class="nav-item " id="activeItem">
+                            <a class="nav-link" id="activeLink" href="#">Login </a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="5"class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                  <img src="img/7.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                  <img src="img/8.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                  <img src="img/9.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                  <img src="img/10.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                  <img src="img/11.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+                </div>
+                <div class="carousel-item active" data-interval="4000" data-touch = "true">
+                    <img src="img/1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                    <div class="carousel-item " data-interval="4000" data-touch = "true">
+                        <img src="img/2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>First slide label</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                    <img src="img/3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                      <div class="carousel-item" data-interval="4000" data-touch = "true">
+                    <img src="img/4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                      <div class="carousel-item" data-interval="4000" data-touch = "true">
+                    <img src="img/5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-interval="4000" data-touch = "true">
+                    <img src="img/6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+        
+          
+          
+
+
+        <!-- <div class="container" style="margin-top: 100px">
+                <div class="row">
+                    <div class="col-sm-3" style="background: #E2E8E4;">
+                        <p> You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                            Sharm Is Famous For It's Breath-Taking Colorful Fishes And 
+                            Under The Water Living Creatures.
+                            You Will Relax So Much And Spend Wonderful Time
+                            Hurry Up and Reserve Now.
+                        </p>
+                    </div>
+  
+                    <div class="col-sm-3">
+                          <img src="0.jpg" class="d-block w-100">
+                    </div>
+  
+                    <div class="col-sm-3" style="background: #E2E8E4;">
+                          <p> You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                            Sharm Is Famous For It's Breath-Taking Colorful Fishes And 
+                            Under The Water Living Creatures.
+                            You Will Relax So Much And Spend Wonderful Time
+                            Hurry Up and Reserve Now.
+                        </p>
+                    </div>
+  
+                    <div class="col-sm-3">
+                          <img src="0.jpg" class="d-block w-100">
+                    </div>
+              </div>
+        </div>
+  
+            <div class="container " style="margin-top: 100px">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="0.jpg" class="d-block w-100">
+                    </div>
+  
+                    <div class="col-sm-3" style="background: #E2E8E4;">
+                      <p> You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                            Sharm Is Famous For It's Breath-Taking Colorful Fishes And 
+                            Under The Water Living Creatures.
+                            You Will Relax So Much And Spend Wonderful Time
+                            Hurry Up and Reserve Now.
+                        </p>
+                    </div>
+  
+                    <div class="col-sm-3">
+                          <img src="0.jpg" class="d-block w-100">
+                    </div>
+  
+                    <div class="col-sm-3" style="background: #E2E8E4;">
+                          <p> You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                            Sharm Is Famous For It's Breath-Taking Colorful Fishes And 
+                            Under The Water Living Creatures.
+                            You Will Relax So Much And Spend Wonderful Time
+                            Hurry Up and Reserve Now.
+                        </p>
+                    </div>
+              </div> -->
+
+
+            <!-- </div> -->
+
+            <div class="container" style="margin-top: 30px">
+                <div class="row">
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      <div class="col-lg-8">
+                                        <img src="0.jpg" class="card-img" alt="...">
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Spend Wonderful Time.
+                                                </p>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      <div class="col-lg-8">
+                                        <img src="0.jpg" class="card-img" alt="...">
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Will Spend Wonderful Time
+                                                </p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+
+          
+              
+            
+            
+                        <div class="container" style="margin-top: 30px">
+                <div class="row">
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Spend Wonderful Time.
+                                                </p>
+                                         
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-8">
+                                            <img src="0.jpg" class="card-img" alt="...">
+                                          </div>
+                                    </div>
+                                  </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Will Spend Wonderful Time
+                                                </p>
+                                          
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-8">
+                                            <img src="0.jpg" class="card-img" alt="...">
+                                          </div>
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container" style="margin-top: 30px">
+                <div class="row">
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      <div class="col-lg-8">
+                                        <img src="0.jpg" class="card-img" alt="...">
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Spend Wonderful Time.
+                                                </p>
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                            <div class="card mb-3" style="max-width: 550px; background-color: #fff">
+                                    <div class="row no-gutters">
+                                      <div class="col-lg-8">
+                                        <img src="0.jpg" class="card-img" alt="...">
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="card-body" style="color: #3b434d">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">You Can Go Diving and Enjoy The Sights Beneath The See Surface
+                                                Sharm Is Famous For It's Breath-Taking Fishes And 
+                                                Under The Water Living Creatures.
+                                                You Will Spend Wonderful Time
+                                                </p>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="container">
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker1').datetimepicker();
+                            });
+                        </script>
+                    </div>
+                </div>
+           
+
+
+                <script> $('#datetimepicker').data("DateTimePicker").FUNCTION();</script>
+                <script>     $('#sandbox-container input').datepicker({
+});</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+
+  
+</html>
